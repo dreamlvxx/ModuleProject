@@ -1,0 +1,11 @@
+
+ext{
+    versions = [
+            butterknifeVersion : "10.2.1",
+    ]
+    dependencies = [
+            "butterknife_compiler": "com.jakewharton:butterknife-compiler:${versions["butterknifeVersion"]}",
+            "butterknife"         : "com.jakewharton:butterknife:${versions["butterknifeVersion"]}",
+            "module_one"          : ":modulecommon"
+    ]
+}

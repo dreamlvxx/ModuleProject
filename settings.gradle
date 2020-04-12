@@ -1,0 +1,7 @@
+apply from: "moduleconfig.gradle"
+include ':app'
+if(gradle.ext.useSourceOne){
+    include ":moduleone"
+    project(":moduleone").projectDir = new File("G:\\flutter_project_space\\Ossar\\ModuleOneProject\\moduleone")
+}
+
